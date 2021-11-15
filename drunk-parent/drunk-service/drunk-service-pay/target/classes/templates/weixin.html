@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>生成二维码</title>
+</head>
+<body>
+<img id="qrious">
+<script src="../static/js/qrious.js"></script>
+<script>
+    var qr = new QRious({
+        element:document.getElementById('qrious'),
+        size:250,
+        level:'H',
+        value:'weixin://wxpay/bizpayurl?pr=nqQlaUXzz'
+    });
+</script>
+</body>
+</html>

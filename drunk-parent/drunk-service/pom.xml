@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>drunk-parent</artifactId>
+        <groupId>com.drunk</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+    <description>微服务工程</description>
+    <artifactId>drunk-service</artifactId>
+    <packaging>pom</packaging>
+    <modules>
+        <module>drunk-service-goods</module>
+        <module>drunk-service-file</module>
+        <module>drunk-service-canal</module>
+        <module>drunk-service-content</module>
+        <module>drunk-service-elasticsearch</module>
+        <module>drunk-service-user</module>
+        <module>drunk-service-order</module>
+        <module>drunk-service-pay</module>
+        <module>drunk-service-seckill</module>
+    </modules>
+
+    <!--依赖-->
+    <dependencies>
+        <dependency>
+            <groupId>com.drunk</groupId>
+            <artifactId>drunk-common-db</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+        </dependency>
+    </dependencies>
+</project>
